@@ -38,7 +38,7 @@
 
 .img-modal-contenedor {
     width: 50%;
-    background:linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%),url("fotos/hands.avif");
+    background:linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%),url("../fotos/hands.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
