@@ -1,7 +1,6 @@
 //MODAL
 const ingresarButton = document.querySelector(".general-nav-button");
 const modal = document.querySelector(".modal");
-const volverAtras = document.querySelector(".registrar-botones-izquierda");
 const cruz = document.querySelector(".cruz-registrar");
 const flechaEmpresa = document.querySelector(".carta-registro-flecha.emp");
 const flechaOrganizacion = document.querySelector(".carta-registro-flecha.org");
@@ -17,13 +16,13 @@ const obtenerButtonText = () => {
 
 obtenerButtonText();
 
-volverAtras.addEventListener("click", () => {
-  modal.classList.remove("modal-open");
-  localStorage.setItem("botonTexto", ingresarButton.innerHTML);
-});
-
 ingresarButton.addEventListener("click", () => {
   modal.classList.add("modal-open");
+  const volverAtras = document.querySelector(".registrar-botones-izquierda");
+  volverAtras.addEventListener("click", () => {
+    modal.classList.remove("modal-open");
+    localStorage.setItem("botonTexto", ingresarButton.innerHTML);
+  });
 });
 
 cruz.addEventListener("click", () => {
