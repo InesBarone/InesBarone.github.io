@@ -17,6 +17,11 @@ const obtenerButtonText = () => {
 
 obtenerButtonText();
 
+volverAtras.addEventListener("click", () => {
+  modal.classList.remove("modal-open");
+  localStorage.setItem("botonTexto", ingresarButton.innerHTML);
+});
+
 ingresarButton.addEventListener("click", () => {
   modal.classList.add("modal-open");
 });
