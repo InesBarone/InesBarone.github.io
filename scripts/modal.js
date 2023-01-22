@@ -1,7 +1,7 @@
 //MODAL
 const ingresarButton = document.querySelector(".general-nav-button");
 const modal = document.querySelector(".modal");
-const volverAtras = document.querySelector("registrar-botones-izquierda");
+const volverAtras = document.querySelector(".registrar-botones-izquierda");
 const cruz = document.querySelector(".cruz-registrar");
 const flechaEmpresa = document.querySelector(".carta-registro-flecha.emp");
 const flechaOrganizacion = document.querySelector(".carta-registro-flecha.org");
