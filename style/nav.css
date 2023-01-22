@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.general-nav {
+  width: 100%;
+  height: 70px;
+  padding: 0px 20px;
+  margin-top: 0px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+}
+
+.nav-logo-contenedor {
+  padding-right: 8%;
+}
+
+#nav-logo {
+  width: 150px;
+  margin-right: 8%;
+}
+
+.nav-ul-contenedor {
+  width: 50%;
+}
+
+.general-nav-ul {
+  list-style: none;
+  display: flex;
+}
+
+.general-nav-li {
+  margin-right: 20%;
+  font-family: "DM Sans", sans-serif;
+}
+
+.general-nav-button-contenedor {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 66%);
+}
+
+.general-nav-button {
+  padding: 5px;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 50px;
+  background-color: rgb(82, 39, 204);
+  border: 2px solid rgb(82, 39, 204);
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.general-nav-button:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+  color: rgb(82, 39, 204);
+}
+
+.menu-nav {
+  display: none;
+  width: 20px;
+}
+
+@media (max-width: 730px) {
+  .nav-ul-contenedor {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 70px;
+    margin: 0px;
+    display: none;
+    transition: all 0.5s;
+  }
+  .general-nav-ul {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+  }
+  .general-nav-li {
+    display: flex;
+    margin: 5px 0px;
+  }
+  #burguer {
+    min-width: 20px;
+    min-height: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  #burguer span {
+    border-radius: 5px;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    transition: all 300ms ease-out;
+  }
+
+  #burguer.active .line1 {
+    opacity: 0;
+    width: 0;
+  }
+
+  #burguer.active .line2 {
+    transform: translateY(2.5px) rotate(45deg);
+  }
+
+  #burguer.active .line3 {
+    transform: translateY(-2.5px) rotate(-45deg);
+  }
+  .general-nav-button-contenedor {
+    width: 70%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-logo-contenedor {
+    padding-left: 20px;
+  }
+  .general-nav {
+    width: 100vw;
+    padding: 0px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+  }
+  .general-nav-button {
+    padding: 5px;
+  }
+  #nav-logo {
+    width: 100px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 300px) {
+  #nav-logo {
+    width: 60px;
+    margin-right: 0px;
+  }
+}

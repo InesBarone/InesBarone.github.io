@@ -1,0 +1,96 @@
+
+.contenedor-flex {
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2.oportunidades-titulo {
+    color: black;
+    text-align: center;
+}
+
+.contenedor-oportunidades-p {
+    margin: 30px 0;
+}
+
+p.oportunidades-p {
+    color: black;
+    padding:0 18%;
+    text-align: center;
+}
+
+.oportunidades-cuadros-contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.oportunidades-cuadro {
+    width:24%;
+    border-radius: 10px;
+    padding:2%;
+    height:220px;
+}
+
+.flex-cuadro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height:60%;
+}
+
+.icono-oportunidades {
+    width:65px;
+    margin:10px 0 0 20px;
+}
+
+#icono-mano {
+   width:40px;
+}
+
+.oportunidades-cuadro.mano {
+    background-color: rgb(220,53,69);
+}
+
+.oportunidades-cuadro.mano-corazon {
+    background-color: rgb(255,156,7);
+}
+
+.oportunidades-cuadro.reciclar {
+    background-color: rgb(40,167,69);
+}
+
+.oportunidades-cuadro.maletin {
+    background-color: rgb(23,162,184);
+}
+
+h4.oportunidades-cuadro-text {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size:27px;
+    font-weight: lighter;
+}
+
+@media (max-width:730px) {
+    p.oportunidades-p {
+        padding:0%;
+    }
+
+    .oportunidades-cuadros-contenedor {
+        flex-direction: column;
+        height:950px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .oportunidades-cuadro {
+        width:90%;
+        border-radius: 10px;
+        padding:10%;
+        height:220px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}

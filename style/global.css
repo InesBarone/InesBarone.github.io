@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*LETRAS GENERALES*/
+
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size:50px;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size:15px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size:30px;
+    font-weight: lighter;
+}
+
+a.link-li {
+    text-decoration: none;
+    color:black;
+}
+
+a.link-li:hover {
+    color:rgb(82,39,204);
+}
